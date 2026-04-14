@@ -5,13 +5,15 @@
 package br.ulbra.model;
 
 
+
+
 /**
  *
  * @author rafael
  */
 
 public class Chamado {
-    private int id; 
+    private Long id; 
     private String solicitante;
     private String sala;
     private String equipamento_tag;
@@ -24,7 +26,7 @@ public class Chamado {
     public Chamado() {
     }
 
-    public Chamado(int id, String solicitante, String sala, String equipamento_tag, String problema_relatado, String diagnostico_tecnico, String prioridade, String status, String data_abertura) {
+    public Chamado(Long id, String solicitante, String sala, String equipamento_tag, String problema_relatado, String diagnostico_tecnico, String prioridade, String status, String data_abertura) {
         this.id = id;
         this.solicitante = solicitante;
         this.sala = sala;
@@ -36,7 +38,7 @@ public class Chamado {
         this.data_abertura = data_abertura;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -72,7 +74,7 @@ public class Chamado {
         this.data_abertura = data_abertura;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
